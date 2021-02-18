@@ -5,7 +5,7 @@ labels: ['react', 'hook', 'jokes']
 
 import { useEffect } from 'react';
 import { useJokes } from './use-jokes'
-import styles from './docs/use-jokes-docs.module.scss'
+import styles from './use-jokes-docs.module.scss'
 
 ### use-jokes returns an array with the following:
 

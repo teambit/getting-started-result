@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useJokes } from './use-jokes';
-import styles from './docs/use-jokes-docs.module.scss';
+
+const styles = require('./use-jokes-docs.module.scss');
 
 export const ToggleBetweenRemoteAndLocal = () => {
   const [isLocal, setIsLocal] = useState(false);
@@ -8,11 +9,8 @@ export const ToggleBetweenRemoteAndLocal = () => {
   return (
     <div>
       <div>
-        <button
-          style={{ display: 'block' }}
-          onClick={() => setIsLocal((prev) => !prev)}
-        >
-          Toggle 'local' / 'remote'
+        <button onClick={() => setIsLocal((prev) => !prev)}>
+          Toggle between 'local' and 'remote'
         </button>
       </div>
       <GetJokes local={isLocal}></GetJokes>

@@ -1,19 +1,27 @@
 import React, { ReactNode, useState } from 'react';
-import styles from './app-bar.module.scss';
+
+const styles = require('./app-bar.module.scss');
 
 export type AppBarProps = {
   /** App-bar items -  each consists of a label and an action to execute when selected. */
-  items: { label: string; action: () => any }[],
+  items: { label: string; action: () => any }[];
   /**  An item to be selected as the default when initilizing the app bar */
-  defaultItem?: string,
+  defaultItem?: string;
   /** A custom element (e.g, a logo) */
-  children?: ReactNode,
+  children?: ReactNode;
   /** nameClass, style, etc. */
-  [x:string]: any
+  [x: string]: any;
 };
 
-export const AppBar = ({ items, children, defaultItem, ...rest } : AppBarProps) => {
-  const [selectedItem, setSelectedItem] = useState(defaultItem ? defaultItem : items[0].label);
+export const AppBar = ({
+  items,
+  children,
+  defaultItem,
+  ...rest
+}: AppBarProps) => {
+  const [selectedItem, setSelectedItem] = useState(
+    defaultItem ? defaultItem : items[0].label
+  );
 
   const handleItemClick = (event, callback) => {
     setSelectedItem(event.target.innerText);
@@ -23,11 +31,13 @@ export const AppBar = ({ items, children, defaultItem, ...rest } : AppBarProps) 
   return (
     <div className={styles.appBar} {...rest}>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li
             key={Math.random()}
-            className={selectedItem === item.label ? styles.selected : undefined}
-            onClick={e => handleItemClick(e, item.action)}
+            className={
+              selectedItem === item.label ? styles.selected : undefined
+            }
+            onClick={(e) => handleItemClick(e, item.action)}
           >
             {item.label}
           </li>

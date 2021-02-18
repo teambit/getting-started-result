@@ -1,6 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import cs from 'classnames';
-import styles from './button.module.scss';
+
+const styles = require('./button.module.scss');
 
 export type ButtonProps = {
   /**

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Button } from '@demo-org/tech-jokes.ui.button';
 import { useJokes } from '@demo-org/tech-jokes.hooks.use-jokes';
-import styles from './tech-jokes-viewer.module.scss';
+
+const styles = require('./tech-jokes-viewer.module.scss');
 
 export type BadJokesProps = {
   local: boolean;
