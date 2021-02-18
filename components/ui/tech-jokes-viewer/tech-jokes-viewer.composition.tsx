@@ -11,9 +11,9 @@ export const FullPage = () => {
   ];
 
   return (
-    <div>
-      <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div>
+        <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
         <TechJokesViewer local={isLocal} />
       </div>
     </div>
