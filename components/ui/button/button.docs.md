@@ -5,8 +5,10 @@ labels: ['react', 'typescript', 'button']
 
 import { Button } from './button';
 
-- Place buttons where expect to find them. Do not force users to "hunt for buttons".
-- Do not use generic for your buttons. Use verbs that clearly explain the button's function.
+### UX Guidelines
+
+- Place buttons where you expect to find them. Do not force users to "hunt for buttons".
+- Do not use generic labels for your buttons. Use verbs that clearly explain the button's function.
 - Size buttons in proportion to their importance.
 
 ### Using the 'button' component
