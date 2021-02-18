@@ -29,8 +29,14 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {}
-    }
+      "dependencies": {
+        "@testing-library/react": "11.2.5"
+      },
+      "peerDependencies": {}
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": ["**/*.spec.ts"],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.

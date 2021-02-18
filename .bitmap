@@ -26,11 +26,6 @@
         "rootDir": "components/ui/button",
         "exported": false
     },
-    "ui/paragraph": {
-        "mainFile": "index.ts",
-        "rootDir": "components/ui/paragraph",
-        "exported": false
-    },
     "ui/tech-jokes-viewer": {
         "mainFile": "index.ts",
         "rootDir": "components/ui/tech-jokes-viewer",
