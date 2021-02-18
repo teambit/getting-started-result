@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useLocalJokes } from '@demo-org/tech-jokes.hooks.use-local-jokes';
-import { useRemoteJokes } from '@demo-org/tech-jokes.hooks.use-remote-jokes';
+import { useLocalJokes } from './use-local-jokes';
+import { useRemoteJokes } from './use-remote-jokes';
 
 export const useJokes = (
   local: boolean

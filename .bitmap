@@ -6,16 +6,6 @@
         "rootDir": "components/hooks/use-jokes",
         "exported": false
     },
-    "hooks/use-local-jokes": {
-        "mainFile": "index.ts",
-        "rootDir": "components/hooks/use-local-jokes",
-        "exported": false
-    },
-    "hooks/use-remote-jokes": {
-        "mainFile": "index.ts",
-        "rootDir": "components/hooks/use-remote-jokes",
-        "exported": false
-    },
     "ui/app-bar": {
         "mainFile": "index.ts",
         "rootDir": "components/ui/app-bar",
