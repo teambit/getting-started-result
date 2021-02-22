@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 
 // REPLACE 'demo-org' WITH YOUR OWN ORGANIZATION/USERNAME
-import { Button } from '@demo-org/tech-jokes.ui.button';
-import { useJokes } from '@demo-org/tech-jokes.hooks.use-jokes';
+import { Button } from '@demo-org/demo-scope.ui.elements.button';
+import { useJokes } from '@demo-org/demo-scope.hooks.use-jokes';
 
 const styles = require('./tech-jokes-viewer.module.scss');
 

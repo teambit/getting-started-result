@@ -4,9 +4,9 @@ import { TechJokesViewer } from './tech-jokes-viewer';
 // 1. UNCOMMENT THE FOLLOWING IMPORT
 // 2. REPLACE 'demo-org' WITH YOUR OWN ORGANIZATION/USERNAME
 
-// import { AppBar } from '@demo-org/tech-jokes.ui.app-bar';
+// import { AppBar } from '@demo-org/demo-scope.ui.elements.app-bar';
 
-// export const FullPage = () => {
+// export const ToggleBetweenRemoteAndLocalJokes = () => {
 //   const [isLocal, setIsLocal] = useState(false);
 
 //   const menuItems = [
