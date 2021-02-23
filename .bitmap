@@ -17,5 +17,9 @@
         "mainFile": "index.ts",
         "rootDir": "components/widgets/tech-jokes-viewer"
     },
+    "teambit.evangelist/marketing/twitter-card@0.5.20": {
+        "mainFile": "index.ts",
+        "rootDir": "components/marketing/twitter-card"
+    },
     "version": "14.8.9-dev.285"
 }
