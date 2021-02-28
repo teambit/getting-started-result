@@ -9,11 +9,11 @@
         "mainFile": "index.ts",
         "rootDir": "components/ui/app-bar"
     },
-    "demo-org.tech-jokes/ui/button@0.0.2": {
+    "demo-org.tech-jokes/ui/button@0.0.1": {
         "mainFile": "index.ts",
         "rootDir": "components/ui/button"
     },
-    "demo-org.tech-jokes/ui/tech-jokes-viewer@0.0.2": {
+    "demo-org.tech-jokes/ui/tech-jokes-viewer@0.0.1": {
         "mainFile": "index.ts",
         "rootDir": "components/ui/tech-jokes-viewer"
     },
