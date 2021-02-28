@@ -19,7 +19,7 @@
      * default scope for all components in workspace
      * (get your scope name and username/organization by setting up a new Bit.dev account)
      **/
-    "defaultScope": "your-username-or-organization.your-scope-name"
+    "defaultScope": "demo-org.demo-scope"
   },
   /**
    * main configuration for component dependency resolution.

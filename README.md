@@ -1,14 +1,26 @@
-## Bit v15 Demo Project (React)
+## Final result project for Bit v15 Harmony "Getting Started" docs
 
-This project contains the "clean" demo project used in the "[Getting Started](https://harmony-docs.bit.dev/docs/getting-started/install-bit)" section in the official [Bit v15 "Harmony" Documentation](https://harmony-docs.bit.dev).
+This is the final-result project for the [tech-jokes application](https://github.com/teambit/getting-started) used in the [official Bit v15 Harmony documentation](https://harmony-docs.bit.dev/docs/getting-started/install-bit).
 
-Warning: This project generates highly opinionated and borderline funny tech jokes about your favorite techs.
+![A screen shot of the 'getting started' workspace](https://user-images.githubusercontent.com/49904302/108791974-eef57d80-7588-11eb-9732-14fb23bff90c.png).
 
-### Final result
+## Getting started
 
-Check out [this project](https://github.com/teambit/getting-started-result) to see the final result of this project added with a Bit workspace.
+Run the following commands:
 
-![A screenshot of the 'getting started' workspace](https://user-images.githubusercontent.com/49904302/108791974-eef57d80-7588-11eb-9732-14fb23bff90c.png)
+1. `yarn add global @teambit/bit`
+
+2. `bbit login`
+
+3. `git clone git@github.com:teambit/getting-started-result.git getting-started`
+
+4. `cd getting-started`
+
+5. `bbit install`
+
+6. `bbit start`
+
+Explore the workspace at http://localhost:3000/
 
 ### Issues and questions
 

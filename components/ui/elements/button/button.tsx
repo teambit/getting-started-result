@@ -31,5 +31,6 @@ export function Button({
 
 Button.defaultProps = {
   variant: 'primary',
-  disable: 'false',
+  disable: false,
+  isLoading: false,
 };
