@@ -13,12 +13,12 @@ import { Button } from './button';
 
 ### Using the 'button' component
 
-```jsx live=true
+```jsx live
 <Button variant="primary">Click here</Button>
 ```
 
 ### Disabling the 'button' component
 
-```jsx live=true
+```jsx live
 <Button disabled>Click here</Button>
 ```

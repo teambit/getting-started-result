@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { TechJokesViewer } from './tech-jokes-viewer';
-import { AppBar } from '@demo-org/tech-jokes.ui.app-bar';
 
-export const FullPage = () => {
+import { AppBar } from '@demo-org/demo-scope.ui.elements.app-bar';
+
+export const ToggleBetweenRemoteAndLocalJokes = () => {
   const [isLocal, setIsLocal] = useState(false);
 
   const menuItems = [

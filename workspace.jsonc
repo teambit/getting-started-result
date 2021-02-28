@@ -18,7 +18,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "demo-org.tech-jokes"
+    "defaultScope": "demo-org.demo-scope"
   },
   /**
    * main configuration for component dependency resolution.
@@ -30,6 +30,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@teambit/evangelist.marketing.testimonial": "0.5.20",
         "@testing-library/react": "11.2.5"
       },
       "peerDependencies": {}

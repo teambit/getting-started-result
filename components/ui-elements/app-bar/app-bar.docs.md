@@ -9,7 +9,7 @@ import { AppBar } from './app-bar';
 
 #### An App Bar without a custom element.
 
-```jsx live=true
+```jsx live
 () => {
   const menuItems = [
     { label: 'First Item', action: () => alert('first') },
@@ -22,7 +22,7 @@ import { AppBar } from './app-bar';
 
 #### An App Bar with a custom element (a logo).
 
-```jsx live=true
+```jsx live
 () => {
   const menuItems = [
     { label: 'First Item', action: () => alert('first') },
@@ -42,7 +42,7 @@ import { AppBar } from './app-bar';
 
 #### An App Bar with its second item selected as a default.
 
-```jsx live=true
+```jsx live
 () => {
   const menuItems = [
     { label: 'First Item', action: () => 'x' },
