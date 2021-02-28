@@ -9,7 +9,7 @@ export const PrimaryButton = () => {
   );
 };
 
-export const SecondaryButtonPreview = () => {
+export const SecondaryButton = () => {
   return <Button variant="secondary">Secondary Button</Button>;
 };
 
@@ -19,4 +19,8 @@ export const DisabledButton = () => {
       Disabled Button
     </Button>
   );
+};
+
+export const ButtonIsLoading = () => {
+  return <Button isLoading={true}>Label</Button>;
 };

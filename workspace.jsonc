@@ -1,24 +1,25 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
    **/
   "teambit.workspace/workspace": {
     /**
-     * the name of the component workspace. used for development purposes.
+     * the name of the component workspace.
      **/
-    "name": "getting-started",
+    "name": "Bit React Tutorial",
     /**
      * set the icon to be shown on the Bit server.
      **/
     "icon": "https://static.bit.dev/bit-logo.svg",
     /**
-     * default scope for all components in workspace.
+     * default scope for all components in workspace
+     * (get your scope name and username/organization by setting up a new Bit.dev account)
      **/
-    "defaultScope": "demo-org.demo-scope"
+    "defaultScope": "your-username-or-organization.your-scope-name"
   },
   /**
    * main configuration for component dependency resolution.
@@ -29,30 +30,23 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {
-        "@teambit/evangelist.marketing.testimonial": "0.5.20",
-        "@testing-library/react": "11.2.5"
-      },
-      "peerDependencies": {}
-    },
-    "packageManagerArgs": [],
-    "devFilePatterns": [
-      "**/*.spec.ts"
-    ],
-    "strictPeerDependencies": true
+      "dependencies": {},
+      "peerDependencies": {
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+      }
+    }
   },
   /**
-   * workspace variants allow to set different subsets of configuration for components in your workspace.
-   * this is extremely useful for upgrading, aligning and building components with a
-   * new set of dependencies.
+   * workspace variants allow to select groups of components and set rules and settings specific to them.
    **/
   "teambit.workspace/variants": {
     /**
-     * "*" is a special rule which applied on all components in the workspace.
+     * "*" selects all components in the worspace
      **/
     "*": {
       /**
-       * uncomment to apply the react environment on all components.
+       * the React enviornment is applied on all components
        **/
       "teambit.react/react": {}
     }

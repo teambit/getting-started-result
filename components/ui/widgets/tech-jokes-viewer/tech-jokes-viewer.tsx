@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 
-// REPLACE 'demo-org' WITH YOUR OWN ORGANIZATION/USERNAME
+// Replace 'demo-org' with your own usernmane/organization
+// Replace 'demo-scope' with your own scope name
+// Both values should be identical to the ones set in the `defaultScope` property in `workspace.json`
 import { Button } from '@demo-org/demo-scope.ui.elements.button';
 import { useJokes } from '@demo-org/demo-scope.hooks.use-jokes';
 
@@ -8,17 +10,16 @@ const styles = require('./tech-jokes-viewer.module.scss');
 
 export type BadJokesProps = {
   local: boolean;
-  className?: string;
 };
 
 /** Retrieves and displays bad jokes */
-export const TechJokesViewer = ({ local, className }: BadJokesProps) => {
+export const TechJokesViewer = ({ local }: BadJokesProps) => {
   const [
     setIsLocal,
     getJoke,
     joke,
     error,
-    disableGetJoke,
+    isLoading,
     saveJoke,
     removeJoke,
   ] = useJokes(local);
@@ -36,12 +37,12 @@ export const TechJokesViewer = ({ local, className }: BadJokesProps) => {
     <div className={styles.container}>
       <div className={styles.contentWrapper}>{error || renderJoke(joke)}</div>
       <div className={styles.buttonsWrapper}>
-        <Button disabled={disableGetJoke} onClick={getJoke}>
-          {disableGetJoke ? 'loading...' : 'another one, please'}
+        <Button isLoading={isLoading} onClick={getJoke}>
+          Another one, please
         </Button>
         <Button
           variant="secondary"
-          disabled={disableGetJoke}
+          isLoading={isLoading}
           onClick={() =>
             local ? removeJoke(joke, getJoke) : saveJoke(joke, getJoke)
           }
