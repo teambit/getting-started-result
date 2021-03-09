@@ -8,17 +8,19 @@ This is the final-result project for the [tech-jokes application](https://github
 
 Run the following commands:
 
-1. `yarn add global @teambit/bit`
+1. `yarn global add @teambit/bvm`
 
-2. `bbit login`
+2. `bvm install`
 
-3. `git clone git@github.com:teambit/getting-started-result.git getting-started`
+3. `bit login`
 
-4. `cd getting-started`
+4. `git clone git@github.com:teambit/getting-started-result.git getting-started`
 
-5. `bbit install`
+5. `cd getting-started`
 
-6. `bbit start`
+6. `bit install`
+
+7. `bit start`
 
 Explore the workspace at http://localhost:3000/
 
